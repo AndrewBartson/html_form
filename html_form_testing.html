@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <title>Sign-up Form</title>
+    
+    <style>
+        body {
+            font-family: Tahoma, Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        input, select, textarea {
+            margin: 10px;
+        }
+        label {
+            width: 150px;
+            text-align: right;
+            vertical-align: middle;
+        }
+        .radio_stack {
+            display: block;
+        }
+        .radio_title {
+            margin-bottom: 0;
+            height: 37px;
+            margin-top: 10px;
+            width: 150px;
+            text-align: right;
+        }
+        textarea {
+           vertical-align: top;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <h1>Welcome Users!</h1>
+    <h2>Free sign up!</h2>
+    <div>
+        <form id="form_1" action="#" method="post">
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="" tabindex="1">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" value="" tabindex="2">
+            </div>
+            <div>
+                <label for="gh_username">Github Username:</label>
+                <input type="text" name="gh_username" id="gh_username" value="" tabindex="3">
+            </div>
+            <div>
+                <p class="radio_title">Select a plan:</p>
+                <div class="radio_stack">
+                    <label for="enterprise">Enterprise:</label>
+                    <input type="radio" name="radio-choice" id="enterprise" tabindex="2" value="enterprise">
+                </div>
+                <div class="radio_stack">
+                    <label for="pro">Pro:</label>
+                    <input type="radio" name="radio-choice" id="pro" tabindex="3" value="pro">
+                </div>
+                <div class="radio_stack">
+                    <label for="free">Free:</label>
+                    <input type="radio" name="radio-choice" id="free" tabindex="3" value="free">
+                </div>
+            </div>
+            <div>
+                <label for="rememberMe">Remember Me:</label>
+                <input type="checkbox" name="rememberMe" id="rememberMe">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
